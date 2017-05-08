@@ -5,6 +5,6 @@ export default DS.Model.extend({
   manufacturer: DS.attr(),
   model: DS.attr(),
   color: DS.attr(),
-  dealershipId: DS.attr('belong-to'),
+  dealershipId: DS.belongsTo('dealership'),
   newOrUsed: DS.attr()
 });

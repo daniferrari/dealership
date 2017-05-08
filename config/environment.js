@@ -23,7 +23,7 @@ module.exports = function(environment) {
     }
   };
 
-  ENV.APP_URL = "http://localhost:8081/api";
+  //ENV.APP_URL = 'http://localhost:8081/api';
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

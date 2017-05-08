@@ -1,1 +1,24 @@
+<h1>Dealership List</h1>
+
+{{#link-to 'dealership.new' class="btn btn-primary"}}Add new dealership{{/link-to}}
+
+<br><br>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Cars</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each model as |dealership|}}
+    <tr>
+      <td>{{dealership.name}}</td>
+      <td>{{dealership.address}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+
 {{outlet}}
